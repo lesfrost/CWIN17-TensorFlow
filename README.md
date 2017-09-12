@@ -1,7 +1,11 @@
-. If you don't have # CWIN17-TensorFlow
+
+CWIN17-TensorFlow
 Cow Detector in TensorFlow
+==========================
 
 Overview
+========
+
 This repo contains everything you need over and above a TensorFlow install to teach a TensorFlow Convolutional Neural Network (CNN) to recognise cows from other animals. It's intented to be used at the CWIN17 Hackathon. In more deatil this includes:
 
 1. 10,000 images of cows and 30,000 images on other animals conatined in cowdata.7z zip file
@@ -10,11 +14,13 @@ This repo contains everything you need over and above a TensorFlow install to te
 4. Instructions how to classify anaimal images.
 
 Data
+====
 
 cowdata.7z is a zip file containing. You need to download it and unzip into your working directory. If you don't have an app to unkip a 7z file get one from www.7-zip.org . This will create a data folder and subfolders for cows and other animals. You'll notice that the images are quite small.
 
 
 TensorFlow Install
+==================
 
 Go here https://www.tensorflow.org/install/ for the TEnsorFlow install
 
@@ -54,6 +60,13 @@ $ python
 Enter the short program. You can copy the code line by line and paste it into the python interactive shell via PowerShell.
 
 Note you may get a warning about the tensorflow library not being compiled to use AVX indtructions even though its available on your machine. Ignore this as it just means the learning process takes slightly longer.
+
+Training our Cow network
+========================
+
+In order to train our animal detector we are going to develop a python script. If you want a python editor suggest you download atm here http://atom.io . Go for the windows installer.
+
+
 
 
 
