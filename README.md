@@ -40,7 +40,7 @@ Install pyhton 3.6 from here https://www.python.org/downloads/release/python-362
 Probably easiest to go for the executable installer. Check python is installed by using powershell and typing:
 
 PS C:\users\lefrost> python
-
+w
 You may need to close your PowerShell window and restart it. This should start the python interpretter. 
 
 Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
@@ -50,7 +50,7 @@ CTRL+z and ENTER will quit you out of it.
 
 Back to the TensorFlow install instructions. Use "pip" to install TenSorFlow
 
-C:\> pip install --upgrade tensorflow
+NC:\> pip install --upgrade tensorflow
 
 This will result in lots of python scripts being downloaded and will hopefully end with a sucessfully installed message.
 
@@ -89,6 +89,10 @@ Now go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy and download the nu
 $ cd C:\Users\[user]\Downloads
 $ pip install numpy‑1.13.1+mkl‑cp36‑cp36m‑win_amd64.whl
 
+Now go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#lightning and download sklearn_contrib_lightning‑0.4.0‑cp36‑cp36m‑win_amd64.whl
+
+$ cd C:\Users\[user]\Downloads
+$ pip install sklearn_contrib_lightning‑0.4.0‑cp36‑cp36m‑win_amd64.whl
 
 
 
