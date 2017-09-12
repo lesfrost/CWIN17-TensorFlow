@@ -22,6 +22,7 @@ cowdata.7z is a zip file containing. You need to download it and unzip into your
 TensorFlow Install
 ==================
 
+
 Go here https://www.tensorflow.org/install/ for the TEnsorFlow install
 
 Choose the windows install https://www.tensorflow.org/install/install_windows ( feel free to use other OS's but you're on your own )
@@ -67,6 +68,17 @@ Training our Cow network
 In order to train our animal detector we are going to develop a python script. If you want a python editor suggest you download atm here http://atom.io . Go for the windows installer.
 
 
+Download the cow_trainer.py file into the same working folder as you downloaded the data zip file.
+
+The python code has quite a few dependencies that have to be downloaded.
+
+This is where it gets slightly complex because a lot of the maths packages required are in C, Cython and Fortran code for which most people don't have compilers so you need to download the precompiled execuatble code to match your COU architecture. the best way to do this is from the http://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+Let's start with scipy. Go here and download the right file for your version of python (3.6 ) and your processor architecture e.g. scipy‑0.19.1‑cp36‑cp36m‑win32.whl . Dowload this to the Downloads folder
+
+
+$ pip install scipy
+$ pip install scikit-image
 
 
 
