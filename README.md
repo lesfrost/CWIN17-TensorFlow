@@ -74,11 +74,22 @@ The python code has quite a few dependencies that have to be downloaded.
 
 This is where it gets slightly complex because a lot of the maths packages required are in C, Cython and Fortran code for which most people don't have compilers so you need to download the precompiled execuatble code to match your COU architecture. the best way to do this is from the http://www.lfd.uci.edu/~gohlke/pythonlibs/
 
-Let's start with scipy. Go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy and download the right file for your version of python (3.6 ) and your processor architecture e.g. scipy‑0.19.1‑cp36‑cp36m‑win32.whl . Dowload this to the Downloads folder
+Let's start with scipy. Go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#scipy and download the right file for your version of python (3.6 ) and your processor architecture e.g. scipy‑0.19.1‑cp36‑cp36m‑win_amd64.whl . Dowload this to the Downloads folder
+
+cd C:\Users\[user]\Downloads
+pip install scipy-0.19.1-cp36-cp36m-win_amd64.whl
+
+Now go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-image and download the scikit_image‑0.13.0‑cp36‑cp36m‑win_amd64.whl .
+
+$ cd C:\Users\[user]\Downloads
+$ pip install scikit_image‑0.13.0‑cp36‑cp36m‑win_amd64.whl
+
+Now go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy and download the numpy‑1.13.1+mkl‑cp36‑cp36m‑win_amd64.whl
+
+$ cd C:\Users\[user]\Downloads
+$ pip install numpy‑1.13.1+mkl‑cp36‑cp36m‑win_amd64.whl
 
 
-$ pip install scipy
-$ pip install scikit-image
 
 
 
