@@ -24,7 +24,6 @@ TensorFlow Install
 
 
 Go here https://www.tensorflow.org/install/ for the TEnsorFlow install
-
 Choose the windows install https://www.tensorflow.org/install/install_windows ( feel free to use other OS's but you're on your own )
 
 Select the option for TensorFlow with CPU support only assuming you don't have a separate GPU in your laptop
@@ -35,7 +34,7 @@ If you don't have a Powershell install for windows 10 suggest you install as fol
 
 Click left lower corner Windows and start typing Powershell. Select the "Windows Powershell (x86)" option
 
-Install pyhton 3.6 from here https://www.python.org/downloads/release/python-362/ If you have python installed you may want to upgrade to 3.6.2
+eInstall pyhton 3.6 from here https://www.python.org/downloads/release/python-362/ If you have python installed you may want to upgrade to 3.6.2
 
 Probably easiest to go for the executable installer. Check python is installed by using powershell and typing:
 
@@ -45,7 +44,7 @@ You may need to close your PowerShell window and restart it. This should start t
 
 Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
-
+t
 CTRL+z and ENTER will quit you out of it.
 
 Back to the TensorFlow install instructions. Use "pip" to install TenSorFlow
@@ -54,7 +53,8 @@ Back to the TensorFlow install instructions. Use "pip" to install TenSorFlow
 NC:\> pip install --upgrade tensorflow
 
 
-This will result in lots of python scripts being downloaded and will hopefully end with a sucessfully installed message.
+
+yThis will result in lots of python scripts being downloaded and will hopefully end with a sucessfully installed message.
 
 Validating your TensorFlow install. Follow the instructions to validate your install
 
@@ -64,14 +64,13 @@ Enter the short program. You can copy the code line by line and paste it into th
 
 Note you may get a warning about the tensorflow library not being compiled to use AVX indtructions even though its available on your machine. Ignore this as it just means the learning process takes slightly longer.
 
-Training our Cow network
+TTraining our Cow network
 ========================
 
 In order to train our animal detector we are going to develop a python script. If you want a python editor suggest you download atm here http://atom.io . Go for the windows installer.
 
 
 Download the cow_trainer.py file into the same working folder as you downloaded the data zip file.
-
 The python code has quite a few dependencies that have to be downloaded.
 
 This is where it gets slightly complex because a lot of the maths packages required are in C, Cython and Fortran code for which most people don't have compilers so you need to download the precompiled execuatble code to match your COU architecture. the best way to do this is from the http://www.lfd.uci.edu/~gohlke/pythonlibs/
@@ -103,3 +102,23 @@ Should now get lots of messages about training
 
 The training can take MANY HOURS depending on the processing power of the computer your're running it on. The training python script does 100 epoches ( iterations )
 
+Running the Classifier ( Is it a cow or not ? )
+===============================================
+
+Now we can run the CNN classifier on some test images and see if they are cows or not
+
+$ classifier.py fox_1.jpg
+
+PS C:\Users\lefrost\environments\my_env> .\classify.py .\fox_1.jpg
+2017-09-12 16:12:50.477863: W C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_
+guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and
+ could speed up CPU computations.
+2017-09-12 16:12:50.478745: W C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\36\tensorflow\core\platform\cpu_feature_
+guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine an
+d could speed up CPU computations.
+It's not a cow
+[  1.41226870e-08   1.00000000e+00]
+PS C:\Users\lefrost\environments\my_env>
+
+
+Try the zebra file next and see what you think?
