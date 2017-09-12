@@ -50,7 +50,9 @@ CTRL+z and ENTER will quit you out of it.
 
 Back to the TensorFlow install instructions. Use "pip" to install TenSorFlow
 
+
 NC:\> pip install --upgrade tensorflow
+
 
 This will result in lots of python scripts being downloaded and will hopefully end with a sucessfully installed message.
 
@@ -89,14 +91,15 @@ Now go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy and download the nu
 $ cd C:\Users\[user]\Downloads
 $ pip install numpy‑1.13.1+mkl‑cp36‑cp36m‑win_amd64.whl
 
-Now go here http://www.lfd.uci.edu/~gohlke/pythonlibs/#lightning and download sklearn_contrib_lightning‑0.4.0‑cp36‑cp36m‑win_amd64.whl
+$ pip install sklearn
+$ pip install tflearn
 
-$ cd C:\Users\[user]\Downloads
-$ pip install sklearn_contrib_lightning‑0.4.0‑cp36‑cp36m‑win_amd64.whl
+We should now have all the dependencies to train our CNN
 
+cd cowdetector ( the folder where you installed cow_detector.py )
+$ cow_detector.py
 
+Should now get lots of messages about training 
 
-
-
-
+The training can take MANY HOURS depending on the processing power of the computer your're running it on. The training python script does 100 epoches ( iterations )
 
