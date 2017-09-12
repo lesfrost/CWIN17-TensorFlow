@@ -1,4 +1,3 @@
-
 # CWIN17-TensorFlow
 Cow Detector in TensorFlow
 
@@ -13,3 +12,11 @@ This repo contains everything you need over and above a TensorFlow install to te
 Data
 
 cowdata.7z is a zip file containing. You need to download it and unzip into your working directory
+
+
+TensorFlow Install
+
+Go here https://www.tensorflow.org/install/ for the TEnsorFlow install
+
+Choose the windows install https://www.tensorflow.org/install/install_windows ( feel free to use other OS's but you're on your own )
+
