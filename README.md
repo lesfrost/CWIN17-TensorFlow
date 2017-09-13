@@ -59,7 +59,6 @@ This will result in lots of python scripts being downloaded and will hopefully e
 Validating your TensorFlow install. Follow the TensorFlow install instructions to validate your install
 
 $ python
-
 Enter the short program. You can copy the code line by line and paste it into the python interactive shell via PowerShell.
 
 Note you may get a warning about the tensorflow library not being compiled to use AVX indtructions even though its available on your machine. Ignore this as it just means the learning process takes slightly longer.
@@ -70,7 +69,7 @@ Training our Cow network
 In order to train our animal detector we are going to develop a python script. If you want a python editor suggest you download atom here http://atom.io . Go for the windows installer.
 
 
-Download the cow_trainer.py file into the same working folder as you downloaded the data zip file.
+.Download the cow_trainer.py file into the same working folder as you downloaded the data zip file.
 The python code has quite a few dependencies that have to be downloaded.
 
 This is where it gets slightly complex because a lot of the maths packages required are in C, Cython and Fortran code for which most people don't have compilers so you need to download the precompiled execuatble code to match your CPU architecture. The best way to do this is from the http://www.lfd.uci.edu/~gohlke/pythonlibs/
@@ -106,6 +105,8 @@ Running the Classifier ( Is it a cow or not ? )
 ===============================================
 
 Now we can run the CNN classifier on some test images and see if they are cows or not
+
+Download the test_images.7z zip file and unzip into your working directory. This will give you a number of animal images to test out your classifier.
 
 $ classifier.py fox_1.jpg
 
